@@ -34,6 +34,41 @@ h4 {
     max-width: 1110px;
     margin: 0 auto;
 }
+
+a {
+    color: #4c5866;
+    transition: all ease .3s;
+}
+
+a:hover {
+    color: #7875fe;
+    transition: all ease .3s;
+}
+
+a:active {
+    color: #4c5866;
+    background: #dad9fb;
+    transition: all ease .3s;
+}
+
+.btn--primary {
+    padding: 20px 50px;
+    border: 1px solid #7875fe;
+    color: #7875fe;
+    transition: all ease .3s;
+}
+
+.btn--primary:hover {
+    color: #fff;
+    background: #7875fe;
+    transition: all ease .3s;
+}
+
+.btn--primary:active {
+    color: #7875fe;
+    background: #dad9fb;
+    transition: all ease .3s;
+}
 /* Общие стили */
 
 /* header */
