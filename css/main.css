@@ -14,6 +14,7 @@ body {
 h1 {
     font-size: 60px;
     color: #666666;
+    line-height: 1.2;
 }
 
 h2 {
@@ -100,6 +101,11 @@ a:active {
     align-items: center;
 }
 
+.header__end {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 /* header */
 
 /* main */
@@ -293,8 +299,263 @@ a:active {
 }
 /* copyright */
 
-@media (max-width: 1110px) {
+@media (max-width: 1111px) {
+    /* Общие стили */
     .container {
         max-width: 690px;
     }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    /* Общие стили */
+
+    /* header */
+    .header {
+        border: none;
+        height: 106px;
+    }
+
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 11px;
+    }
+
+    .header__logo {
+        order: 1;
+    }
+
+    .header__nav {
+        order: 3;
+        width: 100%;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 18px 0 20px;
+        margin-top: 10px;
+    }
+
+    .header__end {
+        order: 2;
+        
+    }
+
+    .header__nav_ul {
+        justify-content: space-between;
+    }
+    /* header */
+
+
+    /* main */
+    .main {
+        padding-top: 65px;
+    }
+
+    .main__wrapper {
+        display: flex;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .main__text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 390px;
+        max-height: 340px;
+    }
+
+    .main__text {
+        line-height: 1.5;
+    }
+
+    .main__img {
+        position: relative;
+        height: 470px;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .main__img_img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    /* main */
+
+    /* section */
+    .section {
+        padding: 60px 0;
+    }
+
+    .section__card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section__block {
+        align-items: start;
+    }
+
+    .section__block img {
+        width: calc(100% - 330px);
+    }
+
+    .section__block_text {
+        min-width: 300px;
+    }
+    /* section */
+
+    /* product */
+    .product {
+        padding: 60px 0;
+    }   
+
+    .product__wrapper {
+        flex-wrap: wrap;
+        gap: 60px 30px;
+    }   
+
+    .product__card {
+        width: calc(50% - 15px);
+    }   
+    /* product */
+
+    /* partners */
+    .partners {
+        padding: 60px 0;
+    }
+
+    .partner__card {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #6f7072;
+        width: 25%;
+    }
+
+    .partner__card img {
+        width: 116px;
+    }
+    /* partners */
+
+    /* sketch */
+    .sketch {
+        padding-top: 60px;
+    }
+
+    .sketch__text {
+        min-width: 300px;
+        max-width: 330px;
+    }
+
+    .sketch__wrapper {
+        align-items: start;
+    }
+
+    .sketch__img {
+        position: relative;
+        min-width: 50%;
+        min-height: 340px;
+        overflow: hidden;
+    }
+    
+    .sketch__img img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        width: 100%;
+    }
+    /* sketch */
+}
+
+@media (max-width: 691px) {
+
+    /* Общие стили */
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 510px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    /* Общие стили */
+
+    /* main */
+    .main {
+        padding-top: 20px;
+    }
+
+    .main__wrapper {
+        gap: 29px;
+    }
+
+    .main__text {
+        gap: 20px;
+        max-width: 287px;
+    }
+    /* main */
+
+    /* section */
+    .section__block {
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    .section__block img {
+        width: 330px;
+    }
+
+    .section__block_text {
+        min-width: 300px;
+    }
+    /* section */
+
+    /* partners */
+    .partners__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .partner__card {
+        height: 127px;
+        width: calc(50% - 15px);
+    }
+    /* partners */
+
+    /* sketch */
+    .sketch {
+        padding-bottom: 60px;
+    }
+
+    .sketch__text {
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .sketch__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .sketch__img {
+        min-width: 100%;
+        order: 1;
+    }
+    /* sketch */
 }
